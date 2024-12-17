@@ -5,6 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-
+    <a th:href="@{/}">Service Selection</a>
+<!--    <p th:text="'Welcome ' + ${user.userName}"></p>-->
+    <h1>User List</h1>
+    <ul>
+        <li th:each="user : ${users}" th:text="${user.username}">
+<!--            <a th:href="@{/user/{id}(id=${user.id})}">-->
+<!--                <span th:text="${user.username}"></span>-->
+<!--            </a>-->
+        </li>
+    </ul>
 </body>
 </html>
