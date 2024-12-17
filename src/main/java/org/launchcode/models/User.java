@@ -11,7 +11,7 @@ public class User {
         this.userName = userName;
         this.password = password;
         this.email = email;
-        this.id = nextId;
+        this.id = nextId++;
     }
 
     public int getId() {

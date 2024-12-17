@@ -9,10 +9,10 @@
 <!--    <p th:text="'Welcome ' + ${user.userName}"></p>-->
     <h1>User List</h1>
     <ul>
-        <li th:each="user : ${users}" th:text="${user.username}">
-<!--            <a th:href="@{/user/{id}(id=${user.id})}">-->
-<!--                <span th:text="${user.username}"></span>-->
-<!--            </a>-->
+        <li th:each="user : ${users}">
+            <a th:href="@{/user/{id}(id=${user.id})}">
+                <span th:text="${user.userName}"></span>
+            </a>
         </li>
     </ul>
 </body>
