@@ -10,5 +10,26 @@
 <a th:href="@{/}">
   Select your spa services here
 </a>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Username</th>
+    <th>Email</th>
+
+  </tr>
+
+  </thead>
+  <tr th:each="user : ${users}">
+
+    <td th:text="${user.id}"></td>
+    <td th:text="${user.username}"></td>
+    <td th:text="${user.email}"></td>
+
+
+  </tr>
+
+
+</table>
 </body>
 </html>
